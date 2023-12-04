@@ -4,10 +4,10 @@ import Card from "../UI/Card";
 import MealItem from "./MealItem/MealItem";
 
 const AvailableMeals = () => {
-  const[mealss,setMealss]= useState([]);
-  const[loading,setIsLoading] =useState(true);
+  const [mealss,setMealss]= useState([]);
+  const [loading,setIsLoading] =useState(true);
   const [httpsError,setHttpsError] = useState();
-
+  
   useEffect(()=>{
 
     const fetchMeals = async ()=>{
